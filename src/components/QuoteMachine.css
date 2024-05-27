@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
 .quote-machine {
   display: flex;
   justify-content: center;
@@ -18,6 +25,14 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #007bff;
+  font-weight: 500;
+  clear: both;
+  text-align: center;
+
+  i {
+    font-size: 1em;
+    margin-right: 0.4em;
+  }
 }
 
 #author {
@@ -40,4 +55,39 @@
 #tweet-quote {
   color: #1da1f2;
   font-size: 1.5rem;
+}
+
+.buttons {
+  width: 450px;
+  margin: auto;
+  display: block;
+}
+.buttons.button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+#quote-box .button:hover {
+  opacity: 0.9;
+}
+#quote-box .button#tweet-quote {
+  float: left;
+  padding: 0px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+}
+#quote-box .button#new-quote {
+  float: right;
 }

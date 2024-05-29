@@ -6,12 +6,12 @@ const QuoteBox = ({ quote, author, fetchQuote }) => {
       <p id="text"><i className="fa fa-quote-left"> </i>{quote}</p>
       <p id="author">- {author}</p>
       <div className="button">
-        <button id="new-quote" className="button" onClick={fetchQuote} 
-        style={{ backgroundColor: 'rgb(44, 62, 80)' }}>
+        <button id="new-quote" className="button" onClick={fetchQuote}
+          style={{ backgroundColor: 'rgb(44, 62, 80)' }}>
           New Quote
         </button>
         <a className='button' style={{ backgroundColor: 'rgb(44, 62, 80)' }}
-          id="tweet-quote" 
+          id="tweet-quote"
           href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
             `"${quote}" - ${author}`
           )}`}

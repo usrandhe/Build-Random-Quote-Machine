@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  vertical-align: baseline;
-}
-
 .quote-machine {
   display: flex;
   justify-content: center;
@@ -39,6 +32,7 @@
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
   color: black;
+  text-align: right;
 }
 
 #new-quote {
@@ -47,7 +41,6 @@
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  margin-right: 1rem;
   cursor: pointer;
   border-radius: 4px;
 }

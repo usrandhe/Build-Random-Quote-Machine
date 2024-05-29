@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import QuoteBox from './QuoteBox';
-import './QuoteMachine.css';
+import '../QuoteMachine.css';
 
 const QuoteMachine = () => {
   const [quote, setQuote] = useState('');
@@ -19,7 +19,7 @@ const QuoteMachine = () => {
 
   return (
     <div className="quote-machine">
-      <QuoteBox quote={quote} author={author} fetchQuote={fetchQuote} />
+      {quote && <QuoteBox quote={quote} author={author} fetchQuote={fetchQuote} />}
     </div>
   );
 };
